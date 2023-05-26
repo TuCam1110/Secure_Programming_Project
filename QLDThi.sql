@@ -1,4 +1,4 @@
-﻿create database QLDThi
+create database QLDThi
 
 create table tblUser(
 	id int identity(1,1) not null primary key,
@@ -147,7 +147,7 @@ END
 EXEC getQuestionById @id = 3
 
 /*proc thêm mới kết quả thi*/
-alter proc addResult
+create proc addResult
 @userId int,
 @examId int,
 @score int,
@@ -159,7 +159,7 @@ insert into tblResult(userId, examId, score, startTime, endTime, totalScore)
 values (@userId, @examId, @score, @startTime, @endTime, @totalScore)
 
 /*tạo proc lấy danh sách kết quả */
-alter proc getListResult
+create proc getListResult
 @userId int
 as 
 select tblExam.code, startTime, endTime, score, totalScore from tblResult inner join tblExam
