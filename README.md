@@ -38,8 +38,10 @@
         <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
     </startup>
   <connectionStrings>
-    <add name="Test" connectionString="Data Source=DESKTOP-LRS30NK\SQL;Initial Catalog=QLDThi;Integrated Security=True;
-    MultipleActiveResultSets=true;"providerName="System.Data.SqlClient" />
+    <add name="Test" connectionString="Data Source=DESKTOP-LRS30NK\SQL;
+        Initial Catalog=QLDThi;Integrated Security=True;
+        MultipleActiveResultSets=true;
+        "providerName="System.Data.SqlClient" />
   </connectionStrings>
 </configuration>*
 ```
