@@ -26,7 +26,7 @@
 -   Chức năng của Giảng Viên và Chức năng của Thí Sinh được tách biệt giữa 2 form:
     +   Chức năng đổi mật khẩu: Chỉ có thể thay đổi sau khi login, tối thiểu 8 và tối đa 15 ký tự, bao gồm ký tự đặc biệt và chữ cái viết hoa - FormChangePW line 59.
     +   Mã hóa câu hỏi (mã hóa 2 chiều): FormAddquestion line 100.
-
+<!--
 ## Cài Đặt:
 -   Mở App.config thay đổi tên Server SQL.
 ```
@@ -46,3 +46,4 @@
 </configuration>*
 ```
 -   Mở QLDThi.sql trong thư mục và tạo DB.
+-->
