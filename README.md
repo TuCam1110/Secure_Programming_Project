@@ -28,5 +28,19 @@
     +   Mã hóa câu hỏi (mã hóa 2 chiều): FormAddquestion line 100
 
 ## Cài Đặt:
--   Mở App.config đổi
--   Mở QLDThi.sql
+-   Mở App.config thay đổi tên Server SQL
+```
+<?xml version="1.0" encoding="utf-8" ?>*
+<configuration>
+    <configSections>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+    </startup>
+  <connectionStrings>
+    <add name="Test" connectionString="Data Source=DESKTOP-LRS30NK\SQL;Initial Catalog=QLDThi;Integrated Security=True;
+    MultipleActiveResultSets=true;"providerName="System.Data.SqlClient" />
+  </connectionStrings>
+</configuration>*
+```
+-   Mở QLDThi.sql trong thư mục và tạo DB
